@@ -283,6 +283,7 @@ update_permissions:
         - edition
         - editions
         - extension_interval
+        - held
         - id
         - instagram
         - is_physical
