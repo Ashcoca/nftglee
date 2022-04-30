@@ -17,6 +17,7 @@ export async function post({ locals, request }) {
     let { currentuser } = await q(getUser, undefined, {
       authorization: `Bearer ${jwt_token}`,
     });
+
     body.user = currentuser[0];
 
     return {
