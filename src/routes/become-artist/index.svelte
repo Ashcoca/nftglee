@@ -94,7 +94,6 @@
       balance,
       pubkey,
       wallet_initialized,
-      has_samples,
       ...rest
     } = form;
 
@@ -107,8 +106,6 @@
     }));
 
     await query(insertSamples, { samples }).catch(err);
-
-    $session.user.has_samples = true;
 
     submitted = true;
   };

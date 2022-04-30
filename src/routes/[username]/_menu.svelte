@@ -13,7 +13,7 @@
 </div>
 
 <div class="menu uppercase">
-  {#if !$session.user.is_artist && !$session.user.has_samples}
+  {#if !$session.user.is_artist}
     <a href="/become-artist">
       <div class="flex">
         <div class="my-auto">
