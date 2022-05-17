@@ -1,6 +1,6 @@
-# LNFT
+# Token Ocean
 
-LNFT is a web-based platform for issuing and transacting with non-fungible tokens on the [Bitcoin Liquid Network](https://blockstream.com/liquid/). Blockstream is sponsoring its development and hosting an exemplary curated instance of it for use by Bitcoin artists at [Raretoshi](https://raretoshi.com). 
+Token Ocean is a web-based platform for issuing and transacting with non-fungible tokens on the [Bitcoin Liquid Network](https://blockstream.com/liquid/). Blockstream is sponsoring its development and hosting an exemplary curated instance of it for use by Bitcoin artists at [Raretoshi](https://raretoshi.com). 
 
 The plan is to separate out any Raretoshi-specific features from the core platform functionality so that anyone can adapt the platform to host their own Liquid-based NFT site but that's currently a work in progress
 
@@ -50,8 +50,6 @@ The plan is to separate out any Raretoshi-specific features from the core platfo
 
 ## Setup local development environment
 
-    git clone https://github.com/liquidnft/lnft
-    cd lnft
     pnpm install
     cd hasura
     cp .env.sample .env
@@ -61,8 +59,8 @@ The plan is to separate out any Raretoshi-specific features from the core platfo
     hasura metadata apply
     hasura seeds apply
     hasura metadata reload
-    sudo cp ../static/user.png storage/QmRufapYwRWXh4Lkxv8ctUSJazCKpVPeUKvwsZHDso7ZiW
-    docker exec -it ipfs ipfs add /export/QmRufapYwRWXh4Lkxv8ctUSJazCKpVPeUKvwsZHDso7ZiW
+    sudo cp ../static/user.png storage/QmcbyjMMT5fFtoiWRJiwV8xoiRWJpSRwC6qCFMqp7EXD4Z
+    docker exec -it ipfs ipfs add /export/QmcbyjMMT5fFtoiWRJiwV8xoiRWJpSRwC6qCFMqp7EXD4Z
     docker restart lapp
     cd ..
     pnpm dev   # site is available at http://localhost:3000/
@@ -80,8 +78,8 @@ The plan is to separate out any Raretoshi-specific features from the core platfo
      hasura metadata apply
      hasura seeds apply
      hasura metadata reload
-     sudo cp ../static/user.png storage
-     docker exec -it ipfs ipfs add /export/user.png
+     sudo cp ../static/user.png storage/QmcbyjMMT5fFtoiWRJiwV8xoiRWJpSRwC6qCFMqp7EXD4Z
+     docker exec -it ipfs ipfs add /export/QmcbyjMMT5fFtoiWRJiwV8xoiRWJpSRwC6qCFMqp7EXD4Z
      docker restart lapp
      cd ..
      pnpm dev   # site is available at http://localhost:3000/
